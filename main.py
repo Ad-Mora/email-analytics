@@ -34,6 +34,6 @@ df = df.reset_index()
 del df['index']
 df = df.head(NUM_TOP_COLS)
 
-# print df
+print df
 
 M.logout()
