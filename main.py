@@ -11,9 +11,9 @@ try:
 except imaplib.IMAP4.error:
     print "LOGIN FAILED!!!"
 
-NUM_TRAINING_EMAILS = 100
-NUM_EMAILS_TO_CHECK = 10
-NUM_TOP_COLS = 3
+NUM_TRAINING_EMAILS = 300
+NUM_EMAILS_TO_CHECK = 50
+NUM_TOP_COLS = 20
 INBOX = 'INBOX'
 
 # train the model
@@ -34,6 +34,6 @@ df = df.reset_index()
 del df['index']
 df = df.head(NUM_TOP_COLS)
 
-print df
+# print df
 
 M.logout()
